@@ -1,0 +1,15 @@
+$mapa-1:(
+    margin1: 0 ,
+    padding1 : 0cap,
+    text-decoration1 : none,
+    list-style-type1: none,
+    background-color1: rgb(247, 247, 232)
+);
+
+body{
+    margin: map-get($map: $mapa-1, $key: margin1);
+    padding: map-get($map: $mapa-1, $key:padding1 );
+    text-decoration: map-get($map: $mapa-1, $key: text-decoration1);
+    list-style-type: map-get($map: $mapa-1, $key: list-style-type1);
+    background-color: map-get($map: $mapa-1, $key:background-color1 );
+}

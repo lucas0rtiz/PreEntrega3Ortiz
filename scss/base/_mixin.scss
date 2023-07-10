@@ -1,0 +1,9 @@
+@mixin componentes ($brds,$brcl,$mrg){
+    border-style: $brds;
+    border-color:$brcl ;
+    margin:$mrg ;
+}
+
+main{
+    @include componentes(double,coral ,40px )
+}

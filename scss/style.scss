@@ -1,0 +1,80 @@
+@import "./base/colores";
+
+@import "./base/extend";
+
+@import "./base/maps";
+
+@import "./base/mixin";
+
+@import "./base/vars";
+
+@import "./componentes/footer";
+
+.container {
+    display: $dsp1;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas: "foto-larga" "foto-larga";
+    gap: 10px;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .funcion {
+        grid-template-columns: auto;
+    }
+}
+
+#h11 {
+    color: $clr3;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    text-align: center;
+}
+
+body {
+    header {
+        background-image: url(../images/back.jpeg);
+        background-size: contain;
+        border-style: double;
+        border-color: $clr4 ;
+        margin: 1PX;
+        border: 20PX;
+        width: 100VW;
+    }
+
+}
+
+main {
+    h1 {
+        color: $clr5;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+    }
+}
+
+
+
+p {
+    text-align: center;
+}
+
+
+#parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $clr6;
+}
+.ca7{
+    display: grid;
+ grid-template-columns: 200px;
+ grid-area: foto-larga;
+}
